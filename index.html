@@ -1,0 +1,363 @@
+<!DOCTYPE html><html lang="it"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Il Momento Ristorante — Cucina Romana All You Can Eat | Velletri</title><meta name="description" content="Ristorante a Velletri. Primi romani illimitati a €20, tagliate illimitate a €28. Prenota direttamente senza commissioni. Via del Mattatoio, 9."><meta name="keywords" content="Il Momento ristorante, ristorante Velletri, cucina romana, All You Can Eat, Castelli Romani"><meta property="og:title" content="Il Momento Ristorante — Cucina Romana All You Can Eat | Velletri"><meta property="og:description" content="Ristorante a Velletri. Primi romani illimitati a €20, tagliate illimitate a €28. Prenota direttamente senza commissioni. Via del Mattatoio, 9."><meta property="og:type" content="website"><meta property="og:locale" content="it_IT"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"><!-- Safety net: noscript fallback --><noscript><style>
+      .reveal, .hero__eyebrow, .hero__title, .hero__subtitle, .hero__actions,
+      .hero__actions .btn, .menu__card, .gallery__item, .review-card,
+      .chef__image-wrapper { opacity: 1 !important; transform: none !important; }
+    </style></noscript><link rel="stylesheet" href="/il-momento-velletri/_astro/index.D6BR9jj_.css"></head><body><nav class="navbar" role="navigation" aria-label="Navigazione principale"><div class="navbar__inner"><a href="#" class="navbar__logo" aria-label="Il Momento — Home">Il Momento</a><button class="navbar__burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button><ul class="navbar__links" id="navLinks" role="menubar"><li role="none"><a href="#chisiamo" role="menuitem">Chi Siamo</a></li><li role="none"><a href="#menu" role="menuitem">Menu</a></li><li role="none"><a href="#galleria" role="menuitem">Galleria</a></li><li role="none"><a href="#recensioni" role="menuitem">Recensioni</a></li><li role="none"><a href="#contatti" role="menuitem">Contatti</a></li><li role="none"><a href="https://wa.me/390652978474" target="_blank" rel="noopener" class="btn btn--whatsapp navbar__cta" role="menuitem"><svg width="16" height="16" viewBox="0 0 24 24" fill="white" style="display:block"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>Prenota</a></li></ul></div></nav><main><section class="hero" id="home"><div class="hero__bg"><img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=1400&q=85&auto=format&fit=crop" alt="Tavola imbandita con cucina romana" onerror="this.src='https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1400&q=85&auto=format&fit=crop'"></div><div class="hero__overlay"></div><div class="hero__content container"><p class="hero__eyebrow reveal">Velletri • Castelli Romani</p><h1 class="hero__title"><span class="hero__title-mask">Il Momento</span></h1><p class="hero__subtitle reveal">Cucina romana autentica. Primi illimitati, tagliate, carbonara e molto altro. Prenota il tuo tavolo senza commissioni.</p><div class="hero__actions"><a href="#menu" class="btn btn--primary">Scopri il Menu</a><a href="https://wa.me/390652978474" target="_blank" rel="noopener" class="btn btn--outline-light"><svg width="18" height="18" viewBox="0 0 24 24" fill="white" style="display:block"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>Prenota WhatsApp</a><a href="https://instagram.com/ristorante_ilmomento" target="_blank" rel="noopener" class="btn btn--instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="white" style="display:block"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>Seguici su IG</a></div><div class="hero__ratings"><div class="hero__ratings-item"><span class="hero__ratings-number" data-counter="20" data-prefix="€" data-decimals="0">€20</span><span class="hero__ratings-label">Menu Completo</span></div><div class="hero__ratings-item"><span class="hero__ratings-number" data-counter="155" data-suffix="+" data-decimals="0">155+</span><span class="hero__ratings-label">Piatti su IG</span></div><div class="hero__ratings-item"><span class="hero__ratings-number" data-counter="590" data-suffix="K" data-decimals="0">590K</span><span class="hero__ratings-label">Visualizzazioni TT</span></div></div></div></section><section class="chisiamo reveal" id="chisiamo"><div class="container"><div class="chisiamo__grid"><div class="chisiamo__image chef__image-wrapper"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=85&auto=format&fit=crop" alt="Interno del ristorante Il Momento" onerror="this.src='https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=85&auto=format&fit=crop'" loading="lazy"></div><div class="chisiamo__content"><span class="section__eyebrow reveal">La Nostra Storia</span><h2 class="reveal">Tradizione romana, passione autentica</h2><p class="reveal">Nel cuore dei Castelli Romani, Il Momento porta in tavola i sapori veri della cucina romana. Primi fatti a mano, tagliate succulente e la nostra famosa formula All You Can Eat.</p><p class="reveal">Ogni piatto racconta la nostra terra: ingredienti freschi, ricette tramandate e quel tocco di calore che solo una tavola romana sa dare. Siamo a due passi dal centro di Velletri, in Via del Mattatoio 9.</p><div class="chisiamo__stats reveal"><div><div class="chisiamo__stat-number" data-counter="155" data-suffix="+">155+</div><div class="chisiamo__stat-label">Ricette pubblicate</div></div><div><div class="chisiamo__stat-number" data-counter="20" data-prefix="€" data-decimals="0">€20</div><div class="chisiamo__stat-label">Menu All You Can Eat</div></div><div><div class="chisiamo__stat-number" data-counter="3" data-decimals="0">3</div><div class="chisiamo__stat-label">Serate speciali a settimana</div></div></div></div></div></div></section><section class="menu reveal" id="menu"><div class="container"><div class="section__header"><span class="section__eyebrow">Il Nostro Menu</span><h2 class="section__title">Cucina romana senza limiti</h2><p class="section__subtitle">Primi, tagliate, classici romani. Scegli la formula che preferisci e gusta senza pensieri.</p></div><div class="menu__grid"><!-- Featured Card: Primi Romani --><div class="menu__card menu__card--featured"><span class="menu__card-badge">⭐ Più Richiesto</span><div class="menu__card-icon">🍝</div><h3 class="menu__card-title">Primi Romani Illimitati</h3><p class="menu__card-desc">Carbonara, Amatriciana, Cacio e Pepe, Gricia, Pasta al Sugo e molto altro. Tutti i primi che vuoi, preparati al momento. Ogni giovedì sera.</p><div class="menu__card-price">Giovedì — €20 a persona</div></div><!-- Tagliate --><div class="menu__card"><div class="menu__card-icon">🥩</div><h3 class="menu__card-title">Tagliate Illimitate</h3><p class="menu__card-desc">Selezione di tagliate di manzo con contorni di stagione. Ogni mercoledì e venerdì sera.</p><div class="menu__card-price">Merc & Ven — €28 a persona</div></div><!-- Carbonara --><div class="menu__card"><div class="menu__card-icon">🧀</div><h3 class="menu__card-title">Carbonara</h3><p class="menu__card-desc">Uovo, guanciale croccante, pecorino romano e pepe nero. La ricetta che ha reso famosa Roma nel mondo.</p><div class="menu__card-price">Sempre nel menu</div></div><!-- Amatriciana --><div class="menu__card"><div class="menu__card-icon">🍅</div><h3 class="menu__card-title">Amatriciana</h3><p class="menu__card-desc">Guanciale, pomodoro San Marzano e pecorino. Un classico che non delude mai.</p><div class="menu__card-price">Sempre nel menu</div></div><!-- Cacio e Pepe --><div class="menu__card"><div class="menu__card-icon">🫕</div><h3 class="menu__card-title">Cacio e Pepe</h3><p class="menu__card-desc">Solo tre ingredienti: pasta, pecorino e pepe. La semplicità che diventa arte.</p><div class="menu__card-price">Sempre nel menu</div></div></div></div></section><section class="gallery reveal" id="galleria"><div class="container"><div class="section__header"><span class="section__eyebrow">Galleria</span><h2 class="section__title">I nostri piatti</h2><p class="section__subtitle">Uno sguardo a cosa ti aspetta. Clicca sulle foto per ingrandirle.</p></div><div class="gallery__grid"><div class="gallery__item" data-gallery="https://images.unsplash.com/photo-1612874742237-6526221588e3?w=900&q=85&auto=format&fit=crop"><img src="https://images.unsplash.com/photo-1612874742237-6526221588e3?w=600&q=85&auto=format&fit=crop" alt="Carbonara" loading="lazy"></div><div class="gallery__item" data-gallery="https://images.unsplash.com/photo-1551218808-0e1e22c24f1b?w=900&q=85&auto=format&fit=crop"><img src="https://images.unsplash.com/photo-1551218808-0e1e22c24f1b?w=400&q=85&auto=format&fit=crop" alt="Pasta romana" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1612874742237-6526221588e3?w=400&q=85&auto=format&fit=crop'"></div><div class="gallery__item" data-gallery="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=900&q=85&auto=format&fit=crop"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&q=85&auto=format&fit=crop" alt="Tavola imbandita" loading="lazy"></div><div class="gallery__item" data-gallery="https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=900&q=85&auto=format&fit=crop"><img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=400&q=85&auto=format&fit=crop" alt="Piatto italiano" loading="lazy"></div><div class="gallery__item" data-gallery="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=900&q=85&auto=format&fit=crop"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=85&auto=format&fit=crop" alt="Cucina italiana" loading="lazy"></div><div class="gallery__item" data-gallery="https://images.unsplash.com/photo-1546549032-9571cd6b27df?w=900&q=85&auto=format&fit=crop"><img src="https://images.unsplash.com/photo-1546549032-9571cd6b27df?w=400&q=85&auto=format&fit=crop" alt="Tagliata" loading="lazy"></div></div></div></section><section class="reviews reveal" id="recensioni"><div class="container"><div class="section__header"><span class="section__eyebrow">Recensioni</span><h2 class="section__title">Cosa dicono i nostri clienti</h2><p class="section__subtitle">La soddisfazione di chi è già passato a trovarci.</p></div><div class="reviews__grid"><div class="review-card"><div class="review-card__stars">★★★★★</div><p class="review-card__text">"Primi romani spaziali! La carbonara è la migliore che abbia mai mangiato fuori Roma. Il giovedì All You Can Eat è una bomba — ci torno sicuramente."</p><div class="review-card__author">Marco R. <span>— Google</span></div></div><div class="review-card"><div class="review-card__stars">★★★★★</div><p class="review-card__text">"Tagliate morbidissime, cotte alla perfezione. Personale simpatico e atmosfera da vera trattoria romana. Consigliatissimo per una cena tra amici."</p><div class="review-card__author">Laura B. <span>— Google</span></div></div><div class="review-card"><div class="review-card__stars">★★★★½</div><p class="review-card__text">"Ottimo rapporto qualità-prezzo. 20€ per mangiare primi illimitati è difficile da battere. La gricia mi ha conquistato. Unica nota: prenotate prima!"</p><div class="review-card__author">Alessandro F. <span>— Google</span></div></div></div></div></section><section class="cta-section reveal"><div class="container"><h2>Pronto a gustare?</h2><p>Prenota il tuo tavolo direttamente su WhatsApp. Zero commissioni, zero intermediari. Ti rispondiamo in pochi minuti.</p><div class="cta-section__buttons"><a href="https://wa.me/390652978474" target="_blank" rel="noopener" class="btn btn--whatsapp" style="font-size:1.05rem; padding:1rem 2.5rem;"><svg width="20" height="20" viewBox="0 0 24 24" fill="white" style="display:block"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>Prenota su WhatsApp</a><a href="tel:+390652978474" class="btn btn--outline-light" style="border-color:rgba(255,255,255,0.5); color:white; font-size:1.05rem; padding:1rem 2.5rem;"><svg width="20" height="20" viewBox="0 0 24 24" fill="white" style="display:block"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"></path></svg>Chiama 06 5297 8474</a></div></div></section><section class="instagram-banner reveal"><div class="container"><h3>Seguici su Instagram</h3><p>Oltre 155 post di piatti veri, storie dalla cucina e aggiornamenti sul menu. Dai un'occhiata!</p><a href="https://instagram.com/ristorante_ilmomento" target="_blank" rel="noopener" class="btn btn--instagram" style="font-size:1rem; padding:0.875rem 2rem;"><svg width="18" height="18" viewBox="0 0 24 24" fill="white" style="display:block"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>@ristorante_ilmomento</a></div></section><section class="map-section reveal" id="dovesiamo"><div id="map"></div><div class="map__button"><a href="https://www.google.com/maps/dir/?api=1&destination=41.6814,12.7755" target="_blank" rel="noopener" class="btn btn--secondary"><svg width="18" height="18" viewBox="0 0 24 24" fill="white" style="display:block"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg>Portami lì — Apri navigatore</a></div></section><section class="contacts reveal" id="contatti"><div class="container"><div class="section__header"><span class="section__eyebrow">Contatti</span><h2 class="section__title">Prenota un tavolo</h2><p class="section__subtitle">Scrivici su WhatsApp, chiamaci o compila il form. Ti rispondiamo subito.</p></div><div class="contacts__grid"><div class="contacts__info"><div class="contacts__item"><div class="contacts__item-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="#C9A96E" style="display:block"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg></div><div><div class="contacts__item-title">Indirizzo</div><div class="contacts__item-text">Via del Mattatoio, 9<br>00049 Velletri RM</div></div></div><div class="contacts__item"><div class="contacts__item-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="#C9A96E" style="display:block"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"></path></svg></div><div><div class="contacts__item-title">Telefono</div><div class="contacts__item-text"><a href="tel:+390652978474">06 5297 8474</a></div></div></div><div class="contacts__item"><div class="contacts__item-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="#C9A96E" style="display:block"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"></path></svg></div><div><div class="contacts__item-title">Orari</div><div class="contacts__item-text"><strong>Gio:</strong> 12:30–14:30 / 19:30–23:00 — Primi Illimitati €20<br><strong>Mer & Ven:</strong> 12:30–14:30 / 19:30–23:00 — Tagliate Illimitate €28<br><strong>Sab & Dom:</strong> 12:30–15:00<br><strong>Lun:</strong> Chiuso | <strong>Dom cena:</strong> Chiuso</div></div></div></div><div class="contacts__form"><h3>Prenota un tavolo</h3><form id="contactForm"><div class="form__group"><label class="form__label" for="name">Nome e Cognome *</label><input class="form__input" type="text" id="name" name="name" required placeholder="Il tuo nome"></div><div class="form__group"><label class="form__label" for="phone">Telefono *</label><input class="form__input" type="tel" id="phone" name="phone" required placeholder="Il tuo numero"></div><div class="form__group"><label class="form__label" for="guests">Numero persone</label><select class="form__select" id="guests" name="guests"><option value="">Seleziona...</option><option value="1">1 persona</option><option value="2">2 persone</option><option value="3">3 persone</option><option value="4">4 persone</option><option value="5">5 persone</option><option value="6+">6+ persone</option></select></div><div class="form__group" style="display:flex; gap:1rem;"><div style="flex:1;"><label class="form__label" for="date">Data</label><input class="form__input" type="date" id="date" name="date"></div><div style="flex:1;"><label class="form__label" for="time">Orario</label><input class="form__input" type="time" id="time" name="time"></div></div><div class="form__group"><label class="form__label" for="message">Messaggio (opzionale)</label><textarea class="form__textarea" id="message" name="message" placeholder="Note, allergie, richieste particolari..."></textarea></div><button type="submit" class="btn btn--primary" style="width:100%; justify-content:center; font-size:1rem; padding:1rem;">Invia richiesta su WhatsApp</button><p class="form__note">La tua richiesta verrà inviata via WhatsApp. Ti risponderemo in pochi minuti!</p></form></div></div></div></section><script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Il Momento ristorante",
+    "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=85&auto=format&fit=crop",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Via del Mattatoio, 9",
+      "addressLocality": "Velletri",
+      "postalCode": "00049",
+      "addressRegion": "RM",
+      "addressCountry": "IT"
+    },
+    "telephone": "+390652978474",
+    "priceRange": "€20-28",
+    "servesCuisine": "Romana",
+    "url": "https://ilmomento.it",
+    "sameAs": [
+      "https://instagram.com/ristorante_ilmomento",
+      "https://tiktok.com/@il_momento_ristorante"
+    ],
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Wednesday", "Friday"],
+        "opens": "12:30",
+        "closes": "14:30"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Wednesday", "Thursday", "Friday"],
+        "opens": "19:30",
+        "closes": "23:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Thursday"],
+        "opens": "12:30",
+        "closes": "14:30"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday", "Sunday"],
+        "opens": "12:30",
+        "closes": "15:00"
+      }
+    ],
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 41.6814,
+      "longitude": 12.7755
+    }
+  }
+  </script></main><footer class="footer" role="contentinfo"><div class="container"><div class="footer__grid"><div><div class="footer__brand-name">Il Momento</div><p class="footer__brand-desc">Ristorante di cucina romana a Velletri. Formula All You Can Eat con primi illimitati, tagliate e molto altro. Prenota direttamente senza commissioni.</p><div class="footer__social"><a href="https://instagram.com/ristorante_ilmomento" target="_blank" rel="noopener" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="white" style="display:block"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg></a><a href="https://tiktok.com/@il_momento_ristorante" target="_blank" rel="noopener" aria-label="TikTok"><svg width="18" height="18" viewBox="0 0 24 24" fill="white" style="display:block"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"></path></svg></a></div></div><div><div class="footer__col-title">Menu</div><ul class="footer__links"><li><a href="#menu">I Nostri Piatti</a></li><li><a href="#menu">Primi Romani</a></li><li><a href="#menu">Tagliate</a></li><li><a href="#menu">All You Can Eat</a></li></ul></div><div><div class="footer__col-title">Link</div><ul class="footer__links"><li><a href="#chisiamo">Chi Siamo</a></li><li><a href="#galleria">Galleria</a></li><li><a href="#recensioni">Recensioni</a></li><li><a href="#contatti">Contatti</a></li></ul></div><div><div class="footer__col-title">Orari</div><ul class="footer__links"><li><span>Gio: 12:30 – 14:30 / 19:30 – 23:00</span></li><li><span>Mer & Ven: 12:30 – 14:30 / 19:30 – 23:00</span></li><li><span>Sab & Dom: 12:30 – 15:00</span></li><li><span>Lun: Chiuso</span></li></ul></div></div><div class="footer__bottom"><p>&copy; 2025 Il Momento ristorante — Via del Mattatoio, 9, 00049 Velletri RM — P.IVA [DA INSERIRE]</p></div></div></footer><a href="https://wa.me/390652978474" class="whatsapp-float" aria-label="Chat su WhatsApp" target="_blank" rel="noopener"><svg width="28" height="28" viewBox="0 0 24 24" fill="white" style="display:block"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg></a><!-- Lightbox --><div class="lightbox" id="lightbox"><button class="lightbox__close" id="lightboxClose" aria-label="Chiudi">&times;</button><button class="lightbox__prev lightbox__nav" id="lightboxPrev" aria-label="Precedente">&#8249;</button><button class="lightbox__next lightbox__nav" id="lightboxNext" aria-label="Successiva">&#8250;</button><img src="" alt="" id="lightboxImg"></div><!-- CDN Scripts --><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/lenis@1.3.13/dist/lenis.min.js" defer></script><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script><script>
+    /* ===== ANIMATIONS & INTERACTIVITY ===== */
+
+    // =============================================
+    // 1. DEPENDENCY-FREE FUNCTIONS (no GSAP needed)
+    // =============================================
+
+    // Mobile menu toggle
+    function initMobileMenu() {
+      const burger = document.getElementById('burger');
+      const navLinks = document.getElementById('navLinks');
+      if (!burger || !navLinks) return;
+      burger.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+        burger.classList.toggle('open');
+      });
+      // Close on link click
+      navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          navLinks.classList.remove('open');
+          burger.classList.remove('open');
+        });
+      });
+    }
+
+    // Counters with IntersectionObserver
+    function initCounters() {
+      const counters = document.querySelectorAll('[data-counter]');
+      if (!counters.length) return;
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          const el = entry.target;
+          const target = parseInt(el.dataset.counter);
+          const duration = parseInt(el.dataset.duration || 2000);
+          const decimals = parseInt(el.dataset.decimals || 0);
+          const suffix = el.dataset.suffix || '';
+          const prefix = el.dataset.prefix || '';
+          const start = performance.now();
+
+          function update(now) {
+            const elapsed = now - start;
+            const progress = Math.min(elapsed / duration, 1);
+            // easeOutCubic
+            const eased = 1 - Math.pow(1 - progress, 3);
+            const val = (target * eased).toFixed(decimals);
+            el.textContent = prefix + val + suffix;
+            if (progress < 1) requestAnimationFrame(update);
+          }
+          requestAnimationFrame(update);
+          observer.unobserve(el);
+        });
+      }, { threshold: 0.3 });
+
+      counters.forEach(c => observer.observe(c));
+    }
+
+    // Form to WhatsApp redirect
+    function initForm() {
+      const form = document.getElementById('contactForm');
+      if (!form) return;
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = form.querySelector('[name="name"]').value.trim();
+        const phone = form.querySelector('[name="phone"]').value.trim();
+        const guests = form.querySelector('[name="guests"]').value;
+        const date = form.querySelector('[name="date"]').value;
+        const time = form.querySelector('[name="time"]').value;
+        const message = form.querySelector('[name="message"]').value.trim();
+
+        let text = `Ciao Il Momento!%0A%0A`;
+        text += `Sono ${encodeURIComponent(name)}%0A`;
+        text += `Telefono: ${encodeURIComponent(phone)}%0A`;
+        if (guests) text += `Persone: ${guests}%0A`;
+        if (date) text += `Data: ${date}%0A`;
+        if (time) text += `Orario: ${time}%0A`;
+        if (message) text += `%0A${encodeURIComponent(message)}`;
+        text += `%0A%0A(Vorrei prenotare un tavolo)`;
+
+        window.open(`https://wa.me/390652978474?text=${text}`, '_blank');
+        form.reset();
+      });
+    }
+
+    // Lightbox gallery
+    function initLightbox() {
+      const lb = document.getElementById('lightbox');
+      const lbImg = document.getElementById('lightboxImg');
+      const lbClose = document.getElementById('lightboxClose');
+      const lbPrev = document.getElementById('lightboxPrev');
+      const lbNext = document.getElementById('lightboxNext');
+      if (!lb || !lbImg) return;
+
+      const items = Array.from(document.querySelectorAll('[data-gallery]'));
+      let currentIndex = 0;
+
+      function open(index) {
+        currentIndex = index;
+        lbImg.src = items[index].dataset.gallery;
+        lb.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function close() {
+        lb.classList.remove('open');
+        document.body.style.overflow = '';
+      }
+
+      function prev() {
+        currentIndex = (currentIndex - 1 + items.length) % items.length;
+        lbImg.src = items[currentIndex].dataset.gallery;
+      }
+
+      function next() {
+        currentIndex = (currentIndex + 1) % items.length;
+        lbImg.src = items[currentIndex].dataset.gallery;
+      }
+
+      items.forEach((item, i) => item.addEventListener('click', () => open(i)));
+      lbClose.addEventListener('click', close);
+      lb.addEventListener('click', (e) => { if (e.target === lb) close(); });
+      lbPrev.addEventListener('click', prev);
+      lbNext.addEventListener('click', next);
+      document.addEventListener('keydown', (e) => {
+        if (!lb.classList.contains('open')) return;
+        if (e.key === 'Escape') close();
+        if (e.key === 'ArrowLeft') prev();
+        if (e.key === 'ArrowRight') next();
+      });
+    }
+
+    // Leaflet map
+    function initMap() {
+      const mapEl = document.getElementById('map');
+      if (!mapEl || typeof L === 'undefined') return;
+
+      const lat = 41.6814;
+      const lon = 12.7755;
+
+      const map = L.map('map').setView([lat, lon], 15);
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap contributors',
+        maxZoom: 19
+      }).addTo(map);
+
+      L.marker([lat, lon]).addTo(map)
+        .bindPopup('<b>Il Momento ristorante</b><br>Via del Mattatoio, 9<br>00049 Velletri RM')
+        .openPopup();
+    }
+
+    // =============================================
+    // 2. GSAP ANIMATIONS (delayed for CDN load)
+    // =============================================
+    function initGSAP() {
+      if (typeof gsap === 'undefined') {
+        console.warn('GSAP not loaded — revealing elements via fallback');
+        revealAllFallback();
+        return;
+      }
+      if (typeof ScrollTrigger !== 'undefined') gsap.registerPlugin(ScrollTrigger);
+
+      // Lenis smooth scroll
+      let lenis = null;
+      if (typeof Lenis !== 'undefined') {
+        lenis = new Lenis({ duration: 1.2, smoothWheel: true });
+        function raf(time) { lenis.raf(time); requestAnimationFrame(raf); }
+        requestAnimationFrame(raf);
+        lenis.on('scroll', ScrollTrigger.update);
+      }
+
+      // Re-sync ScrollTrigger with Lenis
+      gsap.ticker.add((time) => {
+        if (lenis) lenis.raf(time * 1000);
+      });
+      if (lenis) gsap.ticker.lagSmoothing(0);
+
+      // --- Hero: Mask Reveal + Stagger ---
+      const heroTL = gsap.timeline({ delay: 0.3 });
+      heroTL
+        .to('.hero__eyebrow', { y: 0, opacity: 1, duration: 0.8, ease: 'power2.out' })
+        .to('.hero__title', { yPercent: 0, opacity: 1, duration: 1.0, ease: 'power4.out' }, '-=0.5')
+        .to('.hero__subtitle', { y: 0, opacity: 1, duration: 0.8, ease: 'power2.out' }, '-=0.5')
+        .to('.hero__actions', { opacity: 1, duration: 0.5, ease: 'power2.out' }, '-=0.4')
+        .to('.hero__actions .btn', { y: 0, opacity: 1, duration: 0.5, stagger: 0.1, ease: 'power2.out' }, '-=0.3');
+
+      // --- Scroll Reveal ---
+      gsap.utils.toArray('.reveal').forEach(el => {
+        ScrollTrigger.create({
+          trigger: el,
+          start: 'top 85%',
+          onEnter: () => {
+            gsap.to(el, { opacity: 1, duration: 0.7, ease: 'power2.out' });
+          }
+        });
+      });
+
+      // --- Menu Stagger ---
+      const menuCards = gsap.utils.toArray('.menu__card');
+      if (menuCards.length) {
+        ScrollTrigger.create({
+          trigger: '.menu__grid',
+          start: 'top 80%',
+          onEnter: () => {
+            gsap.to(menuCards, {
+              opacity: 1, y: 0, duration: 0.6,
+              stagger: 0.12, ease: 'power2.out'
+            });
+          },
+          onLeaveBack: () => {
+            gsap.set(menuCards, { opacity: 1, y: 0 });
+          }
+        });
+      }
+
+      // --- Gallery Image Reveal ---
+      gsap.utils.toArray('.gallery__item').forEach(el => {
+        ScrollTrigger.create({
+          trigger: el,
+          start: 'top 90%',
+          onEnter: () => {
+            gsap.to(el, { opacity: 1, duration: 0.5, ease: 'power2.out' });
+          }
+        });
+      });
+
+      // --- Reviews Stagger ---
+      const reviewCards = gsap.utils.toArray('.review-card');
+      if (reviewCards.length) {
+        ScrollTrigger.create({
+          trigger: '.reviews__grid',
+          start: 'top 80%',
+          onEnter: () => {
+            gsap.to(reviewCards, {
+              opacity: 1, y: 0, duration: 0.5,
+              stagger: 0.15, ease: 'power2.out'
+            });
+          },
+          onLeaveBack: () => {
+            gsap.set(reviewCards, { opacity: 1, y: 0 });
+          }
+        });
+      }
+
+      // --- Chef Section Pin ---
+      const chefSection = document.querySelector('.chisiamo');
+      if (chefSection) {
+        ScrollTrigger.create({
+          trigger: chefSection,
+          start: 'top top',
+          end: 'bottom bottom',
+          pin: '.chisiamo__image',
+          pinSpacing: false
+        });
+      }
+
+      // --- Navbar scroll ---
+      ScrollTrigger.create({
+        start: 'top -80',
+        onEnter: () => document.querySelector('.navbar')?.classList.add('scrolled'),
+        onLeaveBack: () => document.querySelector('.navbar')?.classList.remove('scrolled')
+      });
+
+      // --- Parallax hero (subtle) ---
+      gsap.to('.hero__bg', {
+        y: 80,
+        ease: 'none',
+        scrollTrigger: {
+          trigger: '.hero',
+          start: 'top top',
+          end: 'bottom top',
+          scrub: 0.5
+        }
+      });
+    }
+
+    function revealAllFallback() {
+      const els = document.querySelectorAll(
+        '.reveal, .hero__eyebrow, .hero__title, .hero__subtitle, .hero__actions, ' +
+        '.hero__actions .btn, .menu__card, .gallery__item, .review-card, .chef__image-wrapper'
+      );
+      els.forEach(el => { el.style.opacity = '1'; el.style.transform = 'none'; });
+    }
+
+    // =============================================
+    // 3. BOOTSTRAP
+    // =============================================
+    // Safety net: if GSAP CDN fails, reveal elements after 4s
+    setTimeout(() => {
+      const hidden = document.querySelector('.hero__title');
+      if (hidden && getComputedStyle(hidden).opacity === '0') {
+        revealAllFallback();
+      }
+    }, 4000);
+
+    document.addEventListener('DOMContentLoaded', () => {
+      initMobileMenu();
+      initCounters();
+      initForm();
+      initLightbox();
+      initMap();
+      // Delay GSAP to let CDN scripts load
+      setTimeout(initGSAP, 150);
+    });
+  </script></body></html>
