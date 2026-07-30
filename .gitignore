@@ -3,3 +3,4 @@ dist/
 .astro/
 .vite/
 _lead-data/
+*.hermes-tmp.*
