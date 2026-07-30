@@ -107,7 +107,6 @@ const { title = 'Il Momento Ristorante', description = 'Ristorante a Velletri â€
     .menu__card       { opacity: 0; transform: translateY(30px); }
     .gallery__item    { opacity: 0; }
     .review-card      { opacity: 0; transform: translateY(20px); }
-    .chef__image-wrapper { opacity: 0; }
 
     /* ===== BUTTONS ===== */
     .btn {
@@ -267,12 +266,10 @@ const { title = 'Il Momento Ristorante', description = 'Ristorante a Velletri â€
     .chisiamo__image {
       border-radius: var(--radius-lg); overflow: hidden;
       box-shadow: 0 8px 40px rgba(44,36,22,0.12);
+      height: 100%; min-height: 400px;
     }
-    .chisiamo__images {
-      display: flex; flex-direction: column; gap: var(--space-sm);
-    }
-    .chisiamo__image--small {
-      max-width: 70%; align-self: flex-end;
+    .chisiamo__image img {
+      width: 100%; height: 100%; object-fit: cover;
     }
     .chisiamo__content h2 { margin-bottom: var(--space-md); }
     .chisiamo__content p { color: var(--color-text-light); margin-bottom: var(--space-md); line-height: 1.8; }
@@ -569,8 +566,8 @@ const { title = 'Il Momento Ristorante', description = 'Ristorante a Velletri â€
   <noscript>
     <style>
       .reveal, .hero__eyebrow, .hero__title, .hero__subtitle, .hero__actions,
-      .hero__actions .btn, .menu__card, .gallery__item, .review-card,
-      .chef__image-wrapper { opacity: 1 !important; transform: none !important; }
+      .hero__actions .btn, .menu__card, .gallery__item, .review-card {
+        opacity: 1 !important; transform: none !important; }
     </style>
   </noscript>
 </head>
@@ -875,7 +872,7 @@ const { title = 'Il Momento Ristorante', description = 'Ristorante a Velletri â€
     function revealAllFallback() {
       const els = document.querySelectorAll(
         '.reveal, .hero__eyebrow, .hero__title, .hero__subtitle, .hero__actions, ' +
-        '.hero__actions .btn, .menu__card, .gallery__item, .review-card, .chef__image-wrapper'
+        '.hero__actions .btn, .menu__card, .gallery__item, .review-card'
       );
       els.forEach(el => { el.style.opacity = '1'; el.style.transform = 'none'; });
     }
