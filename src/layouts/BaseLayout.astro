@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
 import WhatsAppFloat from '../components/WhatsAppFloat.astro';
 
-const { title = 'Il Momento Ristorante', description = 'Ristorante a Velletri â€” cucina romana All You Can Eat a 20â‚¬. Prenota direttamente senza commissioni.' } = Astro.props;
+const { title = 'Ristorante â€” Cucina Italiana | [CittÃ ]', description = 'Ristorante di cucina italiana. Prenota il tuo tavolo direttamente, senza commissioni.' } = Astro.props;
 ---
 
 <!doctype html>
@@ -13,7 +13,7 @@ const { title = 'Il Momento Ristorante', description = 'Ristorante a Velletri â€
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{title}</title>
   <meta name="description" content={description} />
-  <meta name="keywords" content="Il Momento ristorante, ristorante Velletri, cucina romana, All You Can Eat, Castelli Romani" />
+  <meta name="keywords" content="ristorante, cucina italiana, prenotazione tavolo, [CittÃ ], [DA INSERIRE]" />
 
   <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
@@ -657,6 +657,11 @@ const { title = 'Il Momento Ristorante', description = 'Ristorante a Velletri â€
       if (!form) return;
       form.addEventListener('submit', (e) => {
         e.preventDefault();
+        const waNumber = form.dataset.wa || '';
+        if (!waNumber) {
+          alert('Configura il numero WhatsApp nel form (data-wa).');
+          return;
+        }
         const name = form.querySelector('[name="name"]').value.trim();
         const phone = form.querySelector('[name="phone"]').value.trim();
         const guests = form.querySelector('[name="guests"]').value;
@@ -664,16 +669,15 @@ const { title = 'Il Momento Ristorante', description = 'Ristorante a Velletri â€
         const time = form.querySelector('[name="time"]').value;
         const message = form.querySelector('[name="message"]').value.trim();
 
-        let text = `Ciao Il Momento!%0A%0A`;
+        let text = `Ciao! Vorrei prenotare un tavolo.%0A%0A`;
         text += `Sono ${encodeURIComponent(name)}%0A`;
         text += `Telefono: ${encodeURIComponent(phone)}%0A`;
         if (guests) text += `Persone: ${guests}%0A`;
         if (date) text += `Data: ${date}%0A`;
         if (time) text += `Orario: ${time}%0A`;
         if (message) text += `%0A${encodeURIComponent(message)}`;
-        text += `%0A%0A(Vorrei prenotare un tavolo)`;
 
-        window.open(`https://wa.me/390652978474?text=${text}`, '_blank');
+        window.open(`https://wa.me/${waNumber}?text=${text}`, '_blank');
         form.reset();
       });
     }
@@ -730,8 +734,11 @@ const { title = 'Il Momento Ristorante', description = 'Ristorante a Velletri â€
       const mapEl = document.getElementById('map');
       if (!mapEl || typeof L === 'undefined') return;
 
-      const lat = 41.6814;
-      const lon = 12.7755;
+      // TODO: geocode del nuovo indirizzo con Nominatim:
+      // curl -s "https://nominatim.openstreetmap.org/search?q=<INDIRIZZO>&format=json&limit=1"
+      // e sostituire lat/lon + popup qui sotto
+      const lat = 41.9028;
+      const lon = 12.4964;
 
       const map = L.map('map').setView([lat, lon], 15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -740,7 +747,7 @@ const { title = 'Il Momento Ristorante', description = 'Ristorante a Velletri â€
       }).addTo(map);
 
       L.marker([lat, lon]).addTo(map)
-        .bindPopup('<b>Il Momento ristorante</b><br>Via del Mattatoio, 9<br>00049 Velletri RM')
+        .bindPopup('<b>[Nome Ristorante]</b><br>[DA INSERIRE: indirizzo]')
         .openPopup();
     }
 
