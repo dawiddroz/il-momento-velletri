@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
 import WhatsAppFloat from '../components/WhatsAppFloat.astro';
 
-const { title = 'Ristorante — Cucina Italiana | [Città]', description = 'Ristorante di cucina italiana. Prenota il tuo tavolo direttamente, senza commissioni.' } = Astro.props;
+const { title = 'Il Momento ristorante | Cucina Italiana a Velletri', description = 'Ristorante di cucina italiana a Velletri. Prenota il tuo tavolo direttamente, senza commissioni.' } = Astro.props;
 ---
 
 <!doctype html>
@@ -13,7 +13,7 @@ const { title = 'Ristorante — Cucina Italiana | [Città]', description = 'Rist
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{title}</title>
   <meta name="description" content={description} />
-  <meta name="keywords" content="ristorante, cucina italiana, prenotazione tavolo, [Città], [DA INSERIRE]" />
+  <meta name="keywords" content="ristorante, cucina italiana, prenotazione tavolo, Velletri, carbonara al tartufo, ristorante Velletri" />
 
   <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
@@ -734,20 +734,18 @@ const { title = 'Ristorante — Cucina Italiana | [Città]', description = 'Rist
       const mapEl = document.getElementById('map');
       if (!mapEl || typeof L === 'undefined') return;
 
-      // TODO: geocode del nuovo indirizzo con Nominatim:
-      // curl -s "https://nominatim.openstreetmap.org/search?q=<INDIRIZZO>&format=json&limit=1"
-      // e sostituire lat/lon + popup qui sotto
-      const lat = 41.9028;
-      const lon = 12.4964;
+      // Via del Mattatoio 9, Velletri (geocodificato con Nominatim)
+      const lat = 41.6814;
+      const lon = 12.7755;
 
-      const map = L.map('map').setView([lat, lon], 15);
+      const map = L.map('map').setView([lat, lon], 16);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; OpenStreetMap contributors',
         maxZoom: 19
       }).addTo(map);
 
       L.marker([lat, lon]).addTo(map)
-        .bindPopup('<b>[Nome Ristorante]</b><br>[DA INSERIRE: indirizzo]')
+        .bindPopup('<b>Il Momento ristorante</b><br>Via del Mattatoio, 9, Velletri')
         .openPopup();
     }
 

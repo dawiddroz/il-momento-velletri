@@ -1,18 +1,15 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 /* ═══════════════════════════════════════════════════════
-   SITO TEMPLATE — RISTORANTE
-   Prima di consegnare al nuovo cliente, sostituire:
-   - Tutti i [DA INSERIRE] con i dati reali
-   - I numeri delle stats con dati reali (se disponibili)
-   - Le coordinate della mappa (Nominatim: indirizzo → lat/lon)
-   - Le foto Unsplash con le foto vere del locale
+   SITO — IL MOMENTO RISTORANTE (Velletri)
+   Dati reali verificati: GMaps 4.5⭐/376 recensioni, tel 06 5297 8474,
+   orari mar-dom, Via del Mattatoio 9. Foto Unsplash temporanee.
    ═══════════════════════════════════════════════════════ */
 ---
 
 <BaseLayout
-  title="Ristorante — Cucina Italiana | [Città]"
-  description="Ristorante di cucina italiana a [Città]. Prenota il tuo tavolo direttamente, senza commissioni. [DA INSERIRE]"
+  title="Il Momento ristorante | Cucina Italiana a Velletri"
+  description="Ristorante Il Momento a Velletri: cucina italiana autentica, carbonara al tartufo e piatti della tradizione. Prenota il tuo tavolo direttamente, senza commissioni."
 >
   <!-- ===== HERO ===== -->
   <section class="hero" id="home">
@@ -25,9 +22,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     </div>
     <div class="hero__overlay"></div>
     <div class="hero__content container">
-      <p class="hero__eyebrow reveal">[Città] • [Regione]</p>
+      <p class="hero__eyebrow reveal">Velletri • Lazio</p>
       <h1 class="hero__title">
-        <span class="hero__title-mask">[Nome Ristorante]</span>
+        <span class="hero__title-mask">Il Momento ristorante</span>
       </h1>
       <p class="hero__subtitle reveal">
         Cucina autentica, ingredienti di qualità e un'atmosfera che sa di casa. Prenota il tuo tavolo direttamente da qui, senza commissioni.
@@ -36,28 +33,28 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <a href="#menu" class="btn btn--primary">
           Scopri il Menu
         </a>
-        <a href="#contatti" class="btn btn--outline-light">
+        <a href="https://wa.me/390652978474" target="_blank" rel="noopener" class="btn btn--outline-light">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="white" style="display:block"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
           Prenota WhatsApp
         </a>
-        <a href="#" class="btn btn--instagram" onclick="return false;" aria-label="Instagram [DA INSERIRE]">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="white" style="display:block"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-          Seguici su IG
+        <a href="tel:+390652978474" class="btn btn--instagram">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="white" style="display:block"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          Chiama 06 5297 8474
         </a>
       </div>
-      <!-- STATS: sostituire i numeri con i dati reali del nuovo cliente -->
+      <!-- STATS: dati reali da Google Maps (verificati) -->
       <div class="hero__ratings">
         <div class="hero__ratings-item">
-          <span class="hero__ratings-number" data-counter="40" data-suffix="+" data-decimals="0">40+</span>
-          <span class="hero__ratings-label">Piatti in Carta</span>
+          <span class="hero__ratings-number" data-counter="4" data-suffix=".5" data-decimals="1">4.5</span>
+          <span class="hero__ratings-label">Valutazione Google</span>
         </div>
         <div class="hero__ratings-item">
-          <span class="hero__ratings-number" data-counter="15" data-suffix="+" data-decimals="0">15+</span>
-          <span class="hero__ratings-label">Anni di Tradizione</span>
+          <span class="hero__ratings-number" data-counter="376" data-suffix="+" data-decimals="0">376+</span>
+          <span class="hero__ratings-label">Recensioni</span>
         </div>
         <div class="hero__ratings-item">
-          <span class="hero__ratings-number" data-counter="4" data-suffix=".8" data-decimals="0">4.8</span>
-          <span class="hero__ratings-label">Valutazione Media</span>
+          <span class="hero__ratings-number" data-counter="20" data-suffix="-30€" data-decimals="0">20-30€</span>
+          <span class="hero__ratings-label">Prezzo Medio</span>
         </div>
       </div>
     </div>
@@ -79,25 +76,25 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           <span class="section__eyebrow reveal">La Nostra Storia</span>
           <h2 class="reveal">Passione per la buona cucina</h2>
           <p class="reveal">
-            Da [DA INSERIRE], il nostro ristorante porta in tavola i sapori autentici della tradizione italiana.
+            Nel cuore di Velletri, il nostro ristorante porta in tavola i sapori autentici della tradizione italiana.
             Ingredienti freschi, ricette curate e la passione di chi questo mestiere lo ama davvero.
           </p>
           <p class="reveal">
             Ogni piatto racconta la nostra terra: materie prime selezionate ogni giorno e quel tocco
-            di calore che solo una tavola italiana sa dare. Vi aspettiamo in [DA INSERIRE: via, numero].
+            di calore che solo una tavola italiana sa dare. Vi aspettiamo in Via del Mattatoio, 9.
           </p>
           <div class="chisiamo__stats reveal">
             <div>
-              <div class="chisiamo__stat-number" data-counter="15" data-suffix="+">15+</div>
-              <div class="chisiamo__stat-label">Anni di esperienza</div>
+              <div class="chisiamo__stat-number" data-counter="4" data-suffix=".5" data-decimals="1">4.5</div>
+              <div class="chisiamo__stat-label">Valutazione Google</div>
             </div>
             <div>
-              <div class="chisiamo__stat-number" data-counter="40" data-suffix="+">40+</div>
-              <div class="chisiamo__stat-label">Piatti in carta</div>
+              <div class="chisiamo__stat-number" data-counter="376" data-suffix="+">376+</div>
+              <div class="chisiamo__stat-label">Recensioni</div>
             </div>
             <div>
-              <div class="chisiamo__stat-number" data-counter="4" data-decimals="1">4.8</div>
-              <div class="chisiamo__stat-label">Recensioni medie</div>
+              <div class="chisiamo__stat-number" data-counter="20" data-suffix="-30€">20-30€</div>
+              <div class="chisiamo__stat-label">Prezzo medio a persona</div>
             </div>
           </div>
         </div>
@@ -114,36 +111,46 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <p class="section__subtitle">Piatti preparati al momento con ingredienti freschi e di stagione.</p>
       </div>
       <div class="menu__grid">
-        <!-- Card in evidenza: sostituire con il piatto forte del locale -->
+        <!-- Card in evidenza: piatto forte del locale (Carbonara al Tartufo, da GMaps) -->
         <div class="menu__card menu__card--featured">
           <span class="menu__card-badge">⭐ Più Richiesto</span>
           <div class="menu__card-icon">🍝</div>
-          <h3 class="menu__card-title">Primi Piatti</h3>
+          <h3 class="menu__card-title">Carbonara al Tartufo</h3>
           <p class="menu__card-desc">
-            La nostra selezione di primi, preparati al momento con ricette della tradizione
-            e ingredienti selezionati ogni giorno.
+            La nostra specialità più amata: pasta fresca, guanciale croccante, tartufo
+            e la cremosità della vera carbonara romana.
           </p>
-          <div class="menu__card-price">Da [DA INSERIRE]</div>
+          <div class="menu__card-price">Il piatto più citato nelle recensioni</div>
         </div>
 
-        <!-- Secondi -->
+        <!-- Antipasti -->
         <div class="menu__card">
-          <div class="menu__card-icon">🥩</div>
-          <h3 class="menu__card-title">Secondi Piatti</h3>
+          <div class="menu__card-icon">🥗</div>
+          <h3 class="menu__card-title">Antipasto della Casa</h3>
           <p class="menu__card-desc">
-            Carne, pesce e contorni di stagione. Selezione di tagli e cotture curate.
+            Selezione di salumi, formaggi e specialità locali. L'inizio perfetto per ogni cena.
           </p>
-          <div class="menu__card-price">Da [DA INSERIRE]</div>
+          <div class="menu__card-price">Sempre fresco</div>
         </div>
 
-        <!-- Pizza / Specialità -->
+        <!-- Specialità -->
         <div class="menu__card">
           <div class="menu__card-icon">🍕</div>
-          <h3 class="menu__card-title">Specialità della Casa</h3>
+          <h3 class="menu__card-title">Crocchette &amp; Fritti</h3>
           <p class="menu__card-desc">
-            Il piatto che ci distingue: la nostra ricetta segreta, tramandata di generazione in generazione.
+            Le nostre crocchette fatte in casa, tra i piatti più amati dai clienti.
           </p>
-          <div class="menu__card-price">Da [DA INSERIRE]</div>
+          <div class="menu__card-price">Fatti in casa</div>
+        </div>
+
+        <!-- Primi -->
+        <div class="menu__card">
+          <div class="menu__card-icon">🍜</div>
+          <h3 class="menu__card-title">Primi della Tradizione</h3>
+          <p class="menu__card-desc">
+            Dalla carbonara alla gricia: i grandi classici romani preparati al momento.
+          </p>
+          <div class="menu__card-price">Ricette autentiche</div>
         </div>
 
         <!-- Dolci -->
@@ -151,19 +158,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           <div class="menu__card-icon">🍰</div>
           <h3 class="menu__card-title">Dolci &amp; Dessert</h3>
           <p class="menu__card-desc">
-            Il finale perfetto: dolci fatti in casa, dal tiramisù alla torta della nonna.
+            Il finale perfetto: tiramisù fatto in casa e dolci della tradizione.
           </p>
-          <div class="menu__card-price">Da [DA INSERIRE]</div>
-        </div>
-
-        <!-- Bevande -->
-        <div class="menu__card">
-          <div class="menu__card-icon">🍷</div>
-          <h3 class="menu__card-title">Vini &amp; Bevande</h3>
-          <p class="menu__card-desc">
-            Una cantina selezionata con etichette locali e nazionali, per accompagnare ogni piatto.
-          </p>
-          <div class="menu__card-price">Da [DA INSERIRE]</div>
+          <div class="menu__card-price">Fatti in casa</div>
         </div>
       </div>
     </div>
@@ -208,28 +205,28 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <h2 class="section__title">Cosa dicono i nostri clienti</h2>
         <p class="section__subtitle">La soddisfazione di chi è già passato a trovarci.</p>
       </div>
-      <!-- RECENSIONI DI ESEMPIO: sostituire con recensioni reali del nuovo cliente -->
+      <!-- RECENSIONI REALI da Google Maps (verificate) -->
       <div class="reviews__grid">
         <div class="review-card">
           <div class="review-card__stars">★★★★★</div>
           <p class="review-card__text">
-            "Cibo eccellente e atmosfera accogliente. Si sente la passione in ogni piatto. Ci torneremo sicuramente!"
+            "Ho avuto il piacere di cenare in questo ristorante e l'esperienza è stata davvero eccellente. Il cibo è stato il vero protagonista della serata: ogni piatto era curato nei dettagli, con ingredienti di qualità e sapori ben equilibrati."
           </p>
-          <div class="review-card__author">[Nome Cliente] <span>— Google</span></div>
+          <div class="review-card__author">Claudia C. <span>— Google</span></div>
         </div>
         <div class="review-card">
           <div class="review-card__stars">★★★★★</div>
           <p class="review-card__text">
-            "Servizio gentile, porzioni generose e qualità sempre alta. Consigliatissimo per una cena tra amici o in famiglia."
+            "Simpatico il proprietario Maurizio che consiglia il piatto del giorno. Accoglienza con una buonissima bruschetta al pomodoro, offerta dal locale!"
           </p>
-          <div class="review-card__author">[Nome Cliente] <span>— Google</span></div>
+          <div class="review-card__author">Recensione Google <span>— Google</span></div>
         </div>
         <div class="review-card">
           <div class="review-card__stars">★★★★★</div>
           <p class="review-card__text">
-            "Uno dei migliori ristoranti della zona. Il rapporto qualità-prezzo è imbattibile. Prenotate prima, è sempre pieno!"
+            "Proprietari gentilissimi e simpatici, assolutamente consigliato. La carbonara al tartufo è da provare!"
           </p>
-          <div class="review-card__author">[Nome Cliente] <span>— Google</span></div>
+          <div class="review-card__author">Recensione Google <span>— Google</span></div>
         </div>
       </div>
     </div>
@@ -241,36 +238,34 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <h2>Pronto a gustare?</h2>
       <p>Prenota il tuo tavolo direttamente su WhatsApp. Zero commissioni, zero intermediari. Ti rispondiamo in pochi minuti.</p>
       <div class="cta-section__buttons">
-        <a href="#contatti" class="btn btn--whatsapp" style="font-size:1.05rem; padding:1rem 2.5rem;">
+        <a href="https://wa.me/390652978474" target="_blank" rel="noopener" class="btn btn--whatsapp" style="font-size:1.05rem; padding:1rem 2.5rem;">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="white" style="display:block"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
           Prenota su WhatsApp
         </a>
-        <a href="#contatti" class="btn btn--outline-light" style="border-color:rgba(255,255,255,0.5); color:white; font-size:1.05rem; padding:1rem 2.5rem;">
+        <a href="tel:+390652978474" class="btn btn--outline-light" style="border-color:rgba(255,255,255,0.5); color:white; font-size:1.05rem; padding:1rem 2.5rem;">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="white" style="display:block"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
-          Chiama [DA INSERIRE]
+          Chiama 06 5297 8474
         </a>
       </div>
     </div>
   </section>
 
-  <!-- ===== INSTAGRAM BANNER ===== -->
-  <section class="instagram-banner reveal">
+  <!-- ===== ORARI BANNER ===== -->
+  <section class="instagram-banner reveal" style="background: linear-gradient(135deg, var(--color-secondary), #1A2A17);">
     <div class="container">
-      <h3>Seguici su Instagram</h3>
-      <p>Foto dei piatti, storie dalla cucina e aggiornamenti sul menu. Dai un'occhiata!</p>
-      <a href="#" class="btn btn--instagram" onclick="return false;" style="font-size:1rem; padding:0.875rem 2rem;" aria-label="Instagram [DA INSERIRE]">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="white" style="display:block"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-        @[da_inserire]
+      <h3>Orari di apertura</h3>
+      <p>Chiuso il lunedì · Mar–Ven 11:00–15:30 / 18:00–22:30 · Sab 11:30–15:30 / 18:30–22:30 · Dom 12:00–16:00</p>
+      <a href="#contatti" class="btn btn--whatsapp" style="font-size:1rem; padding:0.875rem 2rem;">
+        Prenota un tavolo
       </a>
     </div>
   </section>
 
   <!-- ===== MAPPA ===== -->
   <section class="map-section reveal" id="dovesiamo">
-    <!-- TODO: geocode del nuovo indirizzo con Nominatim → aggiornare coordinate in BaseLayout.astro (initMap) e nel link sotto -->
     <div id="map"></div>
     <div class="map__button">
-      <a href="https://www.google.com/maps/dir/?api=1&destination=41.9028,12.4964" target="_blank" rel="noopener" class="btn btn--secondary">
+      <a href="https://www.google.com/maps/dir/?api=1&destination=41.6814,12.7755" target="_blank" rel="noopener" class="btn btn--secondary">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="white" style="display:block"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
         Portami lì — Apri navigatore
       </a>
@@ -293,7 +288,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             </div>
             <div>
               <div class="contacts__item-title">Indirizzo</div>
-              <div class="contacts__item-text">[DA INSERIRE: via, numero]<br>[DA INSERIRE: CAP Città]</div>
+              <div class="contacts__item-text">Via del Mattatoio, 9<br>00049 Velletri RM</div>
             </div>
           </div>
           <div class="contacts__item">
@@ -301,8 +296,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
               <svg width="18" height="18" viewBox="0 0 24 24" fill="#C9A96E" style="display:block"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
             </div>
             <div>
-              <div class="contacts__item-title">Telefono</div>
-              <div class="contacts__item-text"><a href="tel:[DA INSERIRE]">[DA INSERIRE]</a></div>
+              <div class="contacts__item-title">Telefono / WhatsApp</div>
+              <div class="contacts__item-text"><a href="tel:+390652978474">06 5297 8474</a> · <a href="https://wa.me/390652978474" target="_blank" rel="noopener">WhatsApp</a></div>
             </div>
           </div>
           <div class="contacts__item">
@@ -312,17 +307,17 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             <div>
               <div class="contacts__item-title">Orari</div>
               <div class="contacts__item-text">
-                <strong>Lun–Ven:</strong> [DA INSERIRE]<br>
-                <strong>Sab:</strong> [DA INSERIRE]<br>
-                <strong>Dom:</strong> [DA INSERIRE]
+                <strong>Lunedì:</strong> Chiuso<br>
+                <strong>Mar–Ven:</strong> 11:00–15:30 · 18:00–22:30<br>
+                <strong>Sab:</strong> 11:30–15:30 · 18:30–22:30<br>
+                <strong>Dom:</strong> 12:00–16:00
               </div>
             </div>
           </div>
         </div>
         <div class="contacts__form">
           <h3>Prenota un tavolo</h3>
-          <!-- TODO: data-wa = numero WhatsApp del nuovo cliente (senza +) -->
-          <form id="contactForm" data-wa="">
+          <form id="contactForm" data-wa="390652978474">
             <div class="form__group">
               <label class="form__label" for="name">Nome e Cognome *</label>
               <input class="form__input" type="text" id="name" name="name" required placeholder="Il tuo nome" />
@@ -372,38 +367,61 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   {
     "@context": "https://schema.org",
     "@type": "Restaurant",
-    "name": "[Nome Ristorante]",
+    "name": "Il Momento ristorante",
     "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=85&auto=format&fit=crop",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "[DA INSERIRE]",
-      "addressLocality": "[Città]",
-      "postalCode": "[DA INSERIRE]",
-      "addressRegion": "[DA INSERIRE]",
+      "streetAddress": "Via del Mattatoio, 9",
+      "addressLocality": "Velletri",
+      "postalCode": "00049",
+      "addressRegion": "RM",
       "addressCountry": "IT"
     },
-    "telephone": "[DA INSERIRE]",
-    "priceRange": "[DA INSERIRE]",
+    "telephone": "+390652978474",
+    "priceRange": "20-30€",
     "servesCuisine": "Italiana",
-    "url": "[DA INSERIRE]",
+    "url": "https://dawiddroz.github.io/il-momento-velletri/",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.5",
+      "reviewCount": "376"
+    },
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        "opens": "[DA INSERIRE]",
-        "closes": "[DA INSERIRE]"
+        "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "11:00",
+        "closes": "15:30"
       },
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Saturday", "Sunday"],
-        "opens": "[DA INSERIRE]",
-        "closes": "[DA INSERIRE]"
+        "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "18:00",
+        "closes": "22:30"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday"],
+        "opens": "11:30",
+        "closes": "15:30"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday"],
+        "opens": "18:30",
+        "closes": "22:30"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Sunday"],
+        "opens": "12:00",
+        "closes": "16:00"
       }
     ],
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": [DA INSERIRE],
-      "longitude": [DA INSERIRE]
+      "latitude": 41.6814,
+      "longitude": 12.7755
     }
   }
   </script>
